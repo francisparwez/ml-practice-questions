@@ -32,7 +32,7 @@ This repository contains 48 questions across eight machine learning algorithms, 
 #### Level ML1 — Beginner
 
 - [x] **Q1. Predict Student Exam Scores** — Trained a Linear Regression model using study hours to predict exam scores; displayed the prediction for 7 hours, coefficient, and intercept. Implementation: `01-linear-regression/a_student-exam-scores.py`.
-- [ ] **Q2. Predict Employee Salaries** — Predict salaries using years of experience and training/testing data.
+- [ ] **Q2. Predict Employee Salaries** — Generated a 50-row synthetic dataset, split it into training and testing sets, and trained a Linear Regression model using years of experience. Added a `predict_salary()` function and predicted a salary for 4.5 years of experience; predictions for the full test set are not yet implemented. Implementation: `01-linear-regression/b_predict_employee_salaries.py`.
 - [ ] **Q3. Evaluate a Regression Model** — Evaluate house price predictions using MAE, MSE, and R².
 
 #### Level ML2 — Intermediate
@@ -188,7 +188,8 @@ This repository contains 48 questions across eight machine learning algorithms, 
 ```text
 ml-practice-questions/
 ├── 01-linear-regression/
-│   └── a_student-exam-scores.py
+│   ├── a_student-exam-scores.py
+│   └── b_predict_employee_salaries.py
 └── README.md
 ```
 

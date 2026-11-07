@@ -14,13 +14,18 @@ from sklearn.linear_model import LinearRegression
 hours_studied = [1, 2, 3, 4, 5, 6]
 exam_scores = [35, 40, 50, 55, 65, 75]
 
+# Reshape the data
 X = np.array(hours_studied).reshape(-1, 1)
+y = np.array(exam_scores)
 
+# Create and fit the model
 model = LinearRegression()
+model.fit(X, y)
 
-model.fit(X=X, y=exam_scores)
+# Predict the score for 7 study hours
+predicted_score = model.predict(np.array([[7]]))
+print(f"Predicted Exam Score For 7 Study Hours: {predicted_score[0].round(2)}")
 
-prediction = model.predict([[7]])
-print(f"Predicted exam score for 7 study hours: {prediction[0]:.2f}")
-print(f"Coefficient (Slope, m): {model.coef_[0]}")
-print(f"Intercept (b): {model.intercept_}")
+# Display the model's coefficient and intercept
+print(f"Model Coefficient: {model.coef_[0].round(2)}")
+print(f"Model Intercept: {model.intercept_.round(2)}")
