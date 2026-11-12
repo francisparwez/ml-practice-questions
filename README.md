@@ -32,8 +32,8 @@ This repository contains 48 questions across eight machine learning algorithms, 
 #### Level ML1 — Beginner
 
 - [x] **Q1. Predict Student Exam Scores** — Trained a Linear Regression model using study hours to predict exam scores; displayed the prediction for 7 hours, coefficient, and intercept. Implementation: `01-linear-regression/a_student-exam-scores.py`.
-- [ ] **Q2. Predict Employee Salaries** — Generated a 50-row synthetic dataset, split it into training and testing sets, and trained a Linear Regression model using years of experience. Added a `predict_salary()` function and predicted a salary for 4.5 years of experience; predictions for the full test set are not yet implemented. Implementation: `01-linear-regression/b_predict_employee_salaries.py`.
-- [ ] **Q3. Evaluate a Regression Model** — Evaluate house price predictions using MAE, MSE, and R².
+- [x] **Q2. Predict Employee Salaries** — Generated a 50-row synthetic dataset, split it into training and testing sets, trained a Linear Regression model using years of experience, and created a `predict_salary()` function to estimate salary for 4.5 years of experience. Also generated test-set predictions and compared them with actual salaries. Implementation: `01-linear-regression/b_predict_employee_salaries.py`.
+- [x] **Q3. Evaluate a Regression Model** — Generated a 75-row synthetic dataset of house sizes and prices, split it into training and testing sets, trained a Linear Regression model, and evaluated test predictions using MAE, MSE, RMSE, and R². Implementation: `01-linear-regression/c_evaluate_regression_model.py`.
 
 #### Level ML2 — Intermediate
 
@@ -41,7 +41,7 @@ This repository contains 48 questions across eight machine learning algorithms, 
 - [ ] **Q5. Investigate the Effect of Outliers** — Compare regression models before and after introducing an outlier.
 - [ ] **Q6. Compare Polynomial and Linear Regression** — Compare linear and polynomial models on curved data.
 
-**Concepts:** `LinearRegression()`, `.fit()`, `.predict()`, coefficients, intercept, MAE, MSE, R², polynomial features.
+**Concepts:** `LinearRegression()`, `.fit()`, `.predict()`, `train_test_split()`, `mean_absolute_error()`, `mean_squared_error()`, `r2_score()`, MAE, MSE, RMSE, R², coefficients, intercept, polynomial features.
 
 ### 🎯 2. Logistic Regression — Questions 7–12
 
@@ -173,7 +173,7 @@ This repository contains 48 questions across eight machine learning algorithms, 
 
 | Algorithm           | Beginner | Intermediate |    Total |
 | ------------------- | -------: | -----------: | -------: |
-| Linear Regression   |      1/3 |          0/3 |      1/6 |
+| Linear Regression   |      3/3 |          0/3 |      3/6 |
 | Logistic Regression |      0/3 |          0/3 |      0/6 |
 | Decision Trees      |      0/3 |          0/3 |      0/6 |
 | Random Forest       |      0/3 |          0/3 |      0/6 |
@@ -181,7 +181,7 @@ This repository contains 48 questions across eight machine learning algorithms, 
 | SVM                 |      0/3 |          0/3 |      0/6 |
 | KNN                 |      0/3 |          0/3 |      0/6 |
 | K-Means Clustering  |      0/3 |          0/3 |      0/6 |
-| **Total**           | **1/24** |     **0/24** | **1/48** |
+| **Total**           | **3/24** |     **0/24** | **3/48** |
 
 ## 📁 Project Structure
 
@@ -189,7 +189,8 @@ This repository contains 48 questions across eight machine learning algorithms, 
 ml-practice-questions/
 ├── 01-linear-regression/
 │   ├── a_student-exam-scores.py
-│   └── b_predict_employee_salaries.py
+│   ├── b_predict_employee_salaries.py
+│   └── c_evaluate_regression_model.py
 └── README.md
 ```
 
@@ -244,8 +245,8 @@ After completing these exercises, the goal is to be able to:
 
 Use this section to record completed questions and noteworthy improvements.
 
-- **Completed questions:** 1 / 48
-- **Beginner questions:** 1 / 24
+- **Completed questions:** 3 / 48
+- **Beginner questions:** 3 / 24
 - **Intermediate questions:** 0 / 24
 - **Algorithms completed:** 0 / 8
 
