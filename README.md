@@ -37,11 +37,11 @@ This repository contains 48 questions across eight machine learning algorithms, 
 
 #### Level ML2 — Intermediate
 
-- [ ] **Q4. Predict Sales Using Advertising Expenditure** — Apply multiple Linear Regression using three advertising features.
+- [x] **Q4. Predict Sales Using Advertising Expenditure** — Created a 30-record advertising dataset with TV, radio, and online expenditure features; trained a Multiple Linear Regression model, predicted sales, and identified the direction of each feature coefficient. Implementation: `01-linear-regression/a_predict_sales_advertising_expenditure.py`.
 - [ ] **Q5. Investigate the Effect of Outliers** — Compare regression models before and after introducing an outlier.
 - [ ] **Q6. Compare Polynomial and Linear Regression** — Compare linear and polynomial models on curved data.
 
-**Concepts:** `LinearRegression()`, `.fit()`, `.predict()`, `train_test_split()`, `mean_absolute_error()`, `mean_squared_error()`, `r2_score()`, MAE, MSE, RMSE, R², coefficients, intercept, polynomial features.
+**Concepts:** `LinearRegression()`, `.fit()`, `.predict()`, `np.column_stack()`, `train_test_split()`, `mean_absolute_error()`, `mean_squared_error()`, `r2_score()`, multiple features, feature coefficients, MAE, MSE, RMSE, R², intercept, polynomial features.
 
 ### 🎯 2. Logistic Regression — Questions 7–12
 
@@ -173,7 +173,7 @@ This repository contains 48 questions across eight machine learning algorithms, 
 
 | Algorithm           | Beginner | Intermediate |    Total |
 | ------------------- | -------: | -----------: | -------: |
-| Linear Regression   |      3/3 |          0/3 |      3/6 |
+| Linear Regression   |      3/3 |          1/3 |      4/6 |
 | Logistic Regression |      0/3 |          0/3 |      0/6 |
 | Decision Trees      |      0/3 |          0/3 |      0/6 |
 | Random Forest       |      0/3 |          0/3 |      0/6 |
@@ -181,7 +181,7 @@ This repository contains 48 questions across eight machine learning algorithms, 
 | SVM                 |      0/3 |          0/3 |      0/6 |
 | KNN                 |      0/3 |          0/3 |      0/6 |
 | K-Means Clustering  |      0/3 |          0/3 |      0/6 |
-| **Total**           | **3/24** |     **0/24** | **3/48** |
+| **Total**           | **3/24** |     **1/24** | **4/48** |
 
 ## 📁 Project Structure
 
@@ -190,7 +190,8 @@ ml-practice-questions/
 ├── 01-linear-regression/
 │   ├── a_student-exam-scores.py
 │   ├── b_predict_employee_salaries.py
-│   └── c_evaluate_regression_model.py
+│   ├── c_evaluate_regression_model.py
+│   └── a_predict_sales_advertising_expenditure.py
 └── README.md
 ```
 
@@ -245,9 +246,9 @@ After completing these exercises, the goal is to be able to:
 
 Use this section to record completed questions and noteworthy improvements.
 
-- **Completed questions:** 3 / 48
+- **Completed questions:** 4 / 48
 - **Beginner questions:** 3 / 24
-- **Intermediate questions:** 0 / 24
+- **Intermediate questions:** 1 / 24
 - **Algorithms completed:** 0 / 8
 
 Update the progress tracker and relevant checkboxes as each solution is completed.
